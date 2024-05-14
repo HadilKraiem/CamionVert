@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "625898624603",
+    "project_id": "ecoconnect-d2c03",
+    "storage_bucket": "ecoconnect-d2c03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625898624603:android:37d74e7c86bc84eb7c117e",
+        "android_client_info": {
+          "package_name": "com.example.ecoconnect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625898624603-qe4kp3hlfrbrgvab69q295rkfcvcbc40.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ecoconnect",
+            "certificate_hash": "ea21a9aeae06474a7510a3a935461d63d17505d8"
+          }
+        },
+        {
+          "client_id": "625898624603-8ivl8f6vhe586na1dc69ssopedr7q3cr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCq01Pl8_Jzhi8JNVJURNxX1elXkbdvGzs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625898624603-8ivl8f6vhe586na1dc69ssopedr7q3cr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "625898624603-2453fdnmucrp3e2dqeunpm92llg8m5us.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.ecoconnect"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

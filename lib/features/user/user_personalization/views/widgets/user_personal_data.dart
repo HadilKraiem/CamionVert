@@ -1,0 +1,63 @@
+import 'package:flutter/material.dart';
+import 'package:ecoconnect/common/styles/custom_layout_with_scroll_padding.dart';
+import 'package:ecoconnect/features/user/user_personalization/controllers/user_controller.dart';
+import 'package:ecoconnect/utilities/constants/sizes.dart';
+import 'package:ecoconnect/utilities/constants/texts.dart';
+
+class UserPersonalData extends StatelessWidget {
+  const UserPersonalData({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    final userController = UserController.instance;
+
+    //
+    return Container(
+      color: Colors.white,
+      child: CustomLayoutWithScrollAndPadding(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            //
+            Text(
+              CTexts.firstName,
+              style: Theme.of(context).textTheme.bodyMedium,
+            ),
+            const SizedBox(height: CSizes.md),
+            TextFormField(
+              initialValue: userController.user.value.firstName,
+              readOnly: true,
+              decoration: const InputDecoration(),
+            ),
+
+            const SizedBox(height: CSizes.lg),
+
+            Text(
+              CTexts.surName,
+              style: Theme.of(context).textTheme.bodyMedium,
+            ),
+            const SizedBox(height: CSizes.md),
+            TextFormField(
+              initialValue: userController.user.value.surName,
+              readOnly: true,
+              decoration: const InputDecoration(),
+            ),
+
+            const SizedBox(height: CSizes.lg),
+
+            Text(
+              CTexts.phoneNo,
+              style: Theme.of(context).textTheme.bodyMedium,
+            ),
+            const SizedBox(height: CSizes.md),
+            TextFormField(
+              initialValue: userController.user.value.phoneNumber,
+              readOnly: true,
+              decoration: const InputDecoration(),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
