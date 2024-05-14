@@ -1,6 +1,6 @@
 {
-    "name": "petrecycler",
-    "short_name": "petrecycler",
+    "name": "ecoconnect",
+    "short_name": "ecoconnect",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
