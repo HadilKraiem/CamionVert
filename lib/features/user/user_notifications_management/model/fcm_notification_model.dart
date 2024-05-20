@@ -1,6 +1,5 @@
 import 'dart:convert';
 
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 
 class FcmNotificationModel {
   final String userId;
@@ -98,7 +97,7 @@ class FcmData {
       notificationType: notificationType ?? this.notificationType,
       dop: dop ?? this.dop,
       top: top ?? this.top,
-      declineReason: declineReason??this.declineReason,
+      declineReason: declineReason ?? this.declineReason,
     );
   }
 
@@ -121,11 +120,10 @@ class FcmData {
 
   factory FcmData.fromMap(Map<String, dynamic> map) {
     return FcmData(
-      notificationType: map['notificationType'] ?? '',
-      dop: map['dop'],
-      top: map['top'],
-      declineReason: map['declineReason']
-    );
+        notificationType: map['notificationType'] ?? '',
+        dop: map['dop'],
+        top: map['top'],
+        declineReason: map['declineReason']);
   }
 
   String toJson() => json.encode(toMap());
